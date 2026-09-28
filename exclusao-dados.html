@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exclusão de dados — Aura Meter</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 20px 80px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.6em; margin-top: 0; }
+  h2 { font-size: 1.15em; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+  .atualizado { color: #666; font-size: 0.9em; }
+  ul { padding-left: 1.3em; }
+  li { margin-bottom: 0.4em; }
+  .contato { background: #f5f5f5; padding: 12px 16px; border-radius: 8px; }
+  a.voltar { display: inline-block; margin-top: 8px; }
+</style>
+</head>
+<body>
+<h1>Exclusão de dados — Aura Meter</h1>
+<p class="atualizado">Última atualização: 28 de setembro de 2026 · Desenvolvedor: Genética Games Lab (conta "Criar Interactivity" na Google Play)</p>
+
+<p>Esta página explica como apagar os dados do app <strong>Aura Meter</strong>
+(pacote <code>com.auraMeter.app</code>) e o que acontece com cada tipo de dado.</p>
+
+<h2>Dados que ficam só no seu aparelho</h2>
+<p>A maior parte dos dados do app — selfie de referência, "assinatura facial",
+histórico de medições e placar de aura — fica guardada <strong>somente no seu
+aparelho</strong>, nunca em nossos servidores. Pra apagar esses dados:</p>
+<ul>
+  <li><strong>Opção rápida:</strong> Android → Configurações → Apps → Aura
+  Meter → Armazenamento → "Limpar dados" (ou desinstalar o app).</li>
+  <li>Isso apaga a selfie de referência, o histórico e o placar de aura
+  imediatamente — não temos como recuperar depois, porque nunca tivemos
+  esses dados.</li>
+</ul>
+
+<h2>Dados que passam pelos nossos servidores</h2>
+<p>Guardamos, ligados a um ID aleatório do aparelho (não ao seu nome ou
+e-mail):</p>
+<ul>
+  <li>Contagem de leituras com IA usadas no dia/mês (pra controlar a cota
+  grátis e a assinatura).</li>
+  <li>Créditos de anúncio assistido, ainda não usados.</li>
+  <li>Se houver assinatura ativa: um identificador técnico ligado à compra
+  (derivado do token de compra do Google Play), sem dado pessoal.</li>
+</ul>
+<p>As fotos de cada medição são enviadas pra gerar a leitura com IA, mas
+<strong>não ficam guardadas</strong> nos nossos servidores depois de gerar a
+resposta.</p>
+
+<h2>Como pedir a exclusão desses dados</h2>
+<p>Mande um e-mail pra:</p>
+<p class="contato">📧 <a href="mailto:criar1@gmail.com?subject=Exclus%C3%A3o%20de%20dados%20-%20Aura%20Meter">criar1@gmail.com</a></p>
+<p>Inclua no e-mail:</p>
+<ul>
+  <li>O nome do app: <strong>Aura Meter</strong>.</li>
+  <li>Se souber, a data aproximada em que usou o app (ajuda a localizar o
+  registro, já que não guardamos nome/e-mail).</li>
+</ul>
+<p>Vamos apagar os registros do nosso banco de dados (Firestore) referentes
+ao seu aparelho em até <strong>30 dias</strong> após a solicitação, e
+confirmar por e-mail quando terminar.</p>
+
+<h2>O que continua existindo depois do pedido</h2>
+<p>Registros de cobrança da assinatura (se houver) que o Google Play mantém
+por conta própria não são apagados por nós — são controlados pela sua conta
+Google, em <a href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">play.google.com/store/account/subscriptions</a>.</p>
+
+<p><a class="voltar" href="./">← Voltar para a Política de Privacidade</a></p>
+
+</body>
+</html>
